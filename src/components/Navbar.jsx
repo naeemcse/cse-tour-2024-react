@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
+import Booking from './../pages/Booking';
 
 const Navbar = () => {
   return (
@@ -45,22 +47,24 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+
+          <a href="/" className="btn btn-ghost text-xl"> CSE Tour 2K24 </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              
+              <a>  Tour Plane</a>
             </li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary> Photo Gallery  </summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a> Teacher </a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a> Student  </a>
                   </li>
                 </ul>
               </details>
@@ -72,7 +76,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           
-          <a className="btn">Button</a>
+          <a href="/booking" className="btn">Book a Seat </a>
+          {/* <Link to="/booking" className="btn">Button</Link> */}
+
         </div>
       </div>
     </>

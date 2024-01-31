@@ -26,7 +26,8 @@ const Hero = () => {
               <h2 className="mb-5  text-xl font-bold ">
               <CountdownToFebruary28 /> 
                </h2>
-              <button className="btn btn-primary"> Let Book a seat </button>
+               <a href="/booking">
+              <button className="btn btn-primary"> Let Book a seat </button></a>
             </div>
           </div>
         </div>
